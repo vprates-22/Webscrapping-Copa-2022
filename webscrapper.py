@@ -1,5 +1,3 @@
-from linecache import getline
-from re import I
 from selenium.webdriver.common.by import By
 from datetime import datetime
 import module
