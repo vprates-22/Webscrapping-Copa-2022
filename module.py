@@ -35,7 +35,7 @@ def acessaJogo(driver, action, jogo, lastDate):
         Jogo, dataJogo = tentaAcessarJogo(driver, action, jogo, lastDate) 
     return Jogo,dataJogo
 
-def acessaEscalação(driver,action, Time):
+def tentaAcessaEscalação(driver, Time):
     """Acessa a escalação detalhada e adentra o time em questão"""
     resultado = driver.find_element(By.XPATH, "/html/body/div[3]/div/main/div[3]/div/div[1]").text.split("\n")
     driver.find_element(By.XPATH, "/html/body/div[3]/div/main/div[3]/div/div[2]/div[8]/div/div[2]/a").click()
@@ -48,6 +48,13 @@ def acessaEscalação(driver,action, Time):
         driver.find_element(By.XPATH, "/html/body/div[3]/div/main/div[2]/div/div/div[2]/div/div[1]/div/div[2]").click()
         sleep(0.5)
     return resultado[0] + " " + resultado[2] + "x" + resultado[4] + " " + resultado[6]
+
+def acessaEscalação(driver, Time):
+    try:
+        return tentaAcessaEscalação(driver, Time)
+    except:
+        sleep(2)
+        return tentaAcessaEscalação(driver, Time)
 
 def acessaJogadores(driver, action, file, atributos, dadosJogo):
     driver.find_element(By.XPATH, "/html/body/div[3]/div/main/div[2]/div/div/div[2]/div/div[2]/div[2]/div/div/div[1]/div/div/div[2]/div[2]").click()
