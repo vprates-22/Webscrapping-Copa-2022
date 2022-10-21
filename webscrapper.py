@@ -2,8 +2,8 @@ from selenium.webdriver.common.by import By
 from datetime import datetime
 import module
 
-url = tuple(['https://www.365scores.com/pt-br/football/england/manchester-united/team/105#results','https://www.365scores.com/pt-br/football/spain/real-madrid/team/131#results','https://www.365scores.com/pt-br/football/england/liverpool/team/108#results'])
-Time = tuple(["Man Utd", "Real Madrid", "Liverpool"])
+url = tuple(['https://www.365scores.com/pt-br/football/england/manchester-united/team/105#results','https://www.365scores.com/pt-br/football/spain/real-madrid/team/131#results','https://www.365scores.com/pt-br/football/england/liverpool/team/108#results', 'https://www.365scores.com/pt-br/football/germany/bayern-munich/team/331#results'])
+Time = tuple(["Man Utd", "Real Madrid", "Liverpool", "FC Bayern"])
 
 Atributos = tuple(["Data", "Partida", "Nome", "Nota", "Area", "Posição", "Min", "Gols", "Assist.", "Pênalti recebido", 
                 "Total de chutes", "Chutes no gol", "Chutes para fora", "Trave", "Chutes interceptados", "Chances perdidas", 
@@ -15,7 +15,7 @@ Atributos = tuple(["Data", "Partida", "Nome", "Nota", "Area", "Posição", "Min"
 
 f_temp = open("a.txt", "w")
 
-for i in range(3):
+for i in range(4):
     # Criando variáveis e configurações iniciais
     driver, actions = module.criaDriver()
     driver.get(url[i])
@@ -36,9 +36,4 @@ for i in range(3):
     driver.close()
 f_temp.close()
 
-f_temp = open("a.txt", "r")
-f_def = open("def.txt", "a")
-for i in f_temp:
-    f_def.write(i)
-f_temp.close()
-f_def.close()
+module.adiciona()

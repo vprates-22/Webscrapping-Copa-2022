@@ -6,7 +6,7 @@ from selenium import webdriver
 from datetime import datetime
 from time import sleep
 import selenium.common.exceptions as exc
-
+import os
 
 def criaDriver():
     opt = Options()
@@ -127,3 +127,12 @@ def coletaDados(driver, file, atributos, dadosJogo):
         else:
             stats["Assist."] = terceiroBloco[i+1]
     escreveDados(file, stats, atributos, dadosJogo)
+
+def adiciona():    
+    f_temp = open("a.txt", "r")
+    f_def = open("def.txt", "a")
+    for i in f_temp:
+        f_def.write(i)
+    f_temp.close()
+    f_def.close()
+    os.remove("a.txt")
