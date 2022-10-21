@@ -21,23 +21,36 @@ def tentaAcessarJogo(driver, action, jogo, lastDate):
     data = datetime.strptime(data, "%d/%m/%Y")
     if(data > lastDate):
         action.send_keys(Keys.ESCAPE).perform()
-        driver.find_element(By.XPATH, f"/html/body/div[3]/div/main/div[4]/div/div/div[1]/div/div[2]/div[{jogo}]/div/div/div/div/div[2]/a").click()
-        sleep(1)
+        try:
+            driver.find_element(By.XPATH, f"/html/body/div[3]/div/main/div[4]/div/div/div[1]/div/div[2]/div[{jogo}]/div/div/div/div/div[2]/a").click()
+        except:        
+            action.send_keys(Keys.PAGE_UP).perform()
+            sleep(0.5)
+            driver.find_element(By.XPATH, f"/html/body/div[3]/div/main/div[4]/div/div/div[1]/div/div[2]/div[{jogo}]/div/div/div/div/div[2]/a").click()
         return 1, data
     return 0, data
 
 def acessaJogo(driver, action, jogo, lastDate):
     try:
-        Jogo, dataJogo = tentaAcessarJogo(driver, action, jogo, lastDate)
-    except exc.NoSuchElementException or exc.ElementClickInterceptedException:
+        return tentaAcessarJogo(driver, action, jogo, lastDate)
+    except exc.ElementClickInterceptedException:
         sleep(1)
         action.send_keys(Keys.ESCAPE).perform()
-        Jogo, dataJogo = tentaAcessarJogo(driver, action, jogo, lastDate) 
-    return Jogo,dataJogo
+        action.send_keys(Keys.PAGE_UP).perform()
+        sleep(0.5)
+        return tentaAcessarJogo(driver, action, jogo, lastDate) 
+    except exc.NoSuchElementException:
+        sleep(1)
+        action.send_keys(Keys.ESCAPE).perform()
+        action.send_keys(Keys.PAGE_UP).perform()
+        sleep(0.5)
+        return tentaAcessarJogo(driver, action, jogo, lastDate) 
 
 def tentaAcessaEscalação(driver, Time):
     """Acessa a escalação detalhada e adentra o time em questão"""
+    sleep(0.5)
     resultado = driver.find_element(By.XPATH, "/html/body/div[3]/div/main/div[3]/div/div[1]").text.split("\n")
+    sleep(1)
     driver.find_element(By.XPATH, "/html/body/div[3]/div/main/div[3]/div/div[2]/div[8]/div/div[2]/a").click()
     sleep(1)
     Home = driver.find_element(By.XPATH, "/html/body/div[3]/div/main/div[2]/div/div/div[2]/div/div[1]/div/div[1]")
@@ -49,15 +62,21 @@ def tentaAcessaEscalação(driver, Time):
         sleep(0.5)
     return resultado[0] + " " + resultado[2] + "x" + resultado[4] + " " + resultado[6]
 
-def acessaEscalação(driver, Time):
+def acessaEscalação(driver, action, Time):
     try:
         return tentaAcessaEscalação(driver, Time)
     except:
-        sleep(2)
+        sleep(1)
+        action.send_keys(Keys.PAGE_DOWN).perform()
+        sleep(1)
         return tentaAcessaEscalação(driver, Time)
 
 def acessaJogadores(driver, action, file, atributos, dadosJogo):
-    driver.find_element(By.XPATH, "/html/body/div[3]/div/main/div[2]/div/div/div[2]/div/div[2]/div[2]/div/div/div[1]/div/div/div[2]/div[2]").click()
+    try:
+        driver.find_element(By.XPATH, "/html/body/div[3]/div/main/div[2]/div/div/div[2]/div/div[2]/div[2]/div/div/div[1]/div/div/div[2]/div[2]").click()
+    except exc.NoSuchElementException:
+        sleep(1)
+        driver.find_element(By.XPATH, "/html/body/div[3]/div/main/div[2]/div/div/div[2]/div/div[2]/div[2]/div/div/div[1]/div/div/div[2]/div[2]").click()
     for _ in range(1,18):
         try:
             driver.find_element(By.XPATH, "/html/body/div[4]/div/div[2]/div/div[1]/div[2]/div[1]/span/div").get_attribute('innerHTML')

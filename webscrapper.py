@@ -23,10 +23,10 @@ for i in range(3):
     j=1
     while(True):
         # Acessando um jogo específico
-        dataLimite = datetime(2022, 10, 10)
+        dataLimite = datetime(2022, 8, 2)
         jogo, dataJogo = module.acessaJogo(driver, actions, j, dataLimite)
         if(jogo):
-            resultado = module.acessaEscalação(driver, Time[i])
+            resultado = module.acessaEscalação(driver, actions, Time[i])
             module.acessaJogadores(driver, actions, f_temp, Atributos, [dataJogo, resultado])
             module.entreJogos(driver, actions)
             j += 1
