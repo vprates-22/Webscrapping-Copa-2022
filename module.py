@@ -14,37 +14,32 @@ def criaDriver():
     driver = webdriver.Chrome(executable_path = './chromedriver', options = opt)
     return driver, ActionChains(driver)
 
-def tentaAcessarJogo(driver, action, jogo, lastDate):
+def tentaAcessarJogo(driver, action, jogo, lastDate, v):
     """Coleta a data do jogo, verifica se o jogo ocorreu após a data desejada e então acessa o jogo"""
     action.send_keys(Keys.ESCAPE).perform()
     data = driver.find_element(By.XPATH, f"/html/body/div[3]/div/main/div[4]/div/div/div[1]/div/div[2]/div[{jogo}]/a/div[2]").get_attribute('innerHTML')
     data = datetime.strptime(data, "%d/%m/%Y")
     if(data > lastDate):
-        action.send_keys(Keys.ESCAPE).perform()
         try:
             driver.find_element(By.XPATH, f"/html/body/div[3]/div/main/div[4]/div/div/div[1]/div/div[2]/div[{jogo}]/div/div/div/div/div[2]/a").click()
-        except:        
-            action.send_keys(Keys.PAGE_UP).perform()
-            sleep(0.5)
-            driver.find_element(By.XPATH, f"/html/body/div[3]/div/main/div[4]/div/div/div[1]/div/div[2]/div[{jogo}]/div/div/div/div/div[2]/a").click()
+        except:      
+            action.send_keys(Keys.ESCAPE).perform()
+            action.send_keys(Keys.HOME).perform()
+            action.send_keys((v//2) * Keys.PAGE_DOWN).perform()
+            sleep(1)
+            tentaAcessarJogo(driver, action, jogo, lastDate, v+1)
         return 1, data
     return 0, data
 
 def acessaJogo(driver, action, jogo, lastDate):
     try:
         return tentaAcessarJogo(driver, action, jogo, lastDate)
-    except exc.ElementClickInterceptedException:
+    except:
         sleep(1)
         action.send_keys(Keys.ESCAPE).perform()
         action.send_keys(Keys.PAGE_UP).perform()
         sleep(0.5)
-        return tentaAcessarJogo(driver, action, jogo, lastDate) 
-    except exc.NoSuchElementException:
-        sleep(1)
-        action.send_keys(Keys.ESCAPE).perform()
-        action.send_keys(Keys.PAGE_UP).perform()
-        sleep(0.5)
-        return tentaAcessarJogo(driver, action, jogo, lastDate) 
+        return tentaAcessarJogo(driver, action, jogo, lastDate, 0) 
 
 def tentaAcessaEscalação(driver, Time):
     """Acessa a escalação detalhada e adentra o time em questão"""
@@ -74,8 +69,9 @@ def acessaEscalação(driver, action, Time):
 def acessaJogadores(driver, action, file, atributos, dadosJogo):
     try:
         driver.find_element(By.XPATH, "/html/body/div[3]/div/main/div[2]/div/div/div[2]/div/div[2]/div[2]/div/div/div[1]/div/div/div[2]/div[2]").click()
-    except exc.NoSuchElementException:
+    except:
         sleep(1)
+        action.send_keys(Keys.ESCAPE).perform()
         driver.find_element(By.XPATH, "/html/body/div[3]/div/main/div[2]/div/div/div[2]/div/div[2]/div[2]/div/div/div[1]/div/div/div[2]/div[2]").click()
     for _ in range(1,18):
         try:
@@ -86,7 +82,9 @@ def acessaJogadores(driver, action, file, atributos, dadosJogo):
             break        
     
 def entreJogos(driver, action):
+    sleep(0.5)
     driver.back()
+    sleep(0.5)
     driver.back()
     sleep(0.5)
     action.send_keys(Keys.ESCAPE).perform()
