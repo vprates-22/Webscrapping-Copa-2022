@@ -14,7 +14,7 @@ def criaDriver():
     driver = webdriver.Chrome(executable_path = './chromedriver', options = opt)
     return driver, ActionChains(driver)
 
-def tentaAcessarJogo(driver, action, jogo, lastDate, v):
+def tentaAcessarJogo(driver, action, jogo, lastDate, v=0):
     """Coleta a data do jogo, verifica se o jogo ocorreu após a data desejada e então acessa o jogo"""
     action.send_keys(Keys.ESCAPE).perform()
     data = driver.find_element(By.XPATH, f"/html/body/div[3]/div/main/div[4]/div/div/div[1]/div/div[2]/div[{jogo}]/a/div[2]").get_attribute('innerHTML')
@@ -25,29 +25,21 @@ def tentaAcessarJogo(driver, action, jogo, lastDate, v):
         except:      
             action.send_keys(Keys.ESCAPE).perform()
             action.send_keys(Keys.HOME).perform()
-            action.send_keys((v//2) * Keys.PAGE_DOWN).perform()
+            action.send_keys(v//3 * Keys.PAGE_DOWN).perform()
             sleep(1)
             tentaAcessarJogo(driver, action, jogo, lastDate, v+1)
         return 1, data
     return 0, data
 
 def acessaJogo(driver, action, jogo, lastDate):
-    try:
-        return tentaAcessarJogo(driver, action, jogo, lastDate)
-    except:
-        sleep(1)
-        action.send_keys(Keys.ESCAPE).perform()
-        action.send_keys(Keys.PAGE_UP).perform()
-        sleep(0.5)
-        return tentaAcessarJogo(driver, action, jogo, lastDate, 0) 
+    return tentaAcessarJogo(driver, action, jogo, lastDate, 0)
 
 def tentaAcessaEscalação(driver, Time):
     """Acessa a escalação detalhada e adentra o time em questão"""
     sleep(0.5)
     resultado = driver.find_element(By.XPATH, "/html/body/div[3]/div/main/div[3]/div/div[1]").text.split("\n")
-    sleep(1)
     driver.find_element(By.XPATH, "/html/body/div[3]/div/main/div[3]/div/div[2]/div[8]/div/div[2]/a").click()
-    sleep(1)
+    sleep(0.5)
     Home = driver.find_element(By.XPATH, "/html/body/div[3]/div/main/div[2]/div/div/div[2]/div/div[1]/div/div[1]")
     if(Home.text == Time):
         Home.click()
@@ -57,14 +49,24 @@ def tentaAcessaEscalação(driver, Time):
         sleep(0.5)
     return resultado[0] + " " + resultado[2] + "x" + resultado[4] + " " + resultado[6]
 
-def acessaEscalação(driver, action, Time):
+def acessaEscalação(driver, action, Time, i=0, f=1):
     try:
+        sleep(1)
+        action.send_keys(Keys.ESCAPE).perform()
+        action.send_keys(Keys.HOME).perform()
+        action.send_keys(i//3 * Keys.PAGE_DOWN).perform()
+        sleep(0.5)
         return tentaAcessaEscalação(driver, Time)
     except:
-        sleep(1)
-        action.send_keys(Keys.PAGE_DOWN).perform()
-        sleep(1)
-        return tentaAcessaEscalação(driver, Time)
+        if(i>15):
+            print("DEU ERRADO")
+            exit()
+        if(i>9 and f):
+            driver.back()
+            driver.forward()
+            sleep(1)
+            return acessaEscalação(driver, action, Time, 0, 0)
+        return acessaEscalação(driver, action, Time, i+1, f)
 
 def acessaJogadores(driver, action, file, atributos, dadosJogo):
     try:
@@ -82,9 +84,7 @@ def acessaJogadores(driver, action, file, atributos, dadosJogo):
             break        
     
 def entreJogos(driver, action):
-    sleep(0.5)
     driver.back()
-    sleep(0.5)
     driver.back()
     sleep(0.5)
     action.send_keys(Keys.ESCAPE).perform()

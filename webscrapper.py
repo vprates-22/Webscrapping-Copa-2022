@@ -2,8 +2,12 @@ from selenium.webdriver.common.by import By
 from datetime import datetime
 import module
 
-url = tuple(['https://www.365scores.com/pt-br/football/england/manchester-united/team/105#results','https://www.365scores.com/pt-br/football/spain/real-madrid/team/131#results','https://www.365scores.com/pt-br/football/england/liverpool/team/108#results', 'https://www.365scores.com/pt-br/football/germany/bayern-munich/team/331#results', 'https://www.365scores.com/pt-br/football/france/psg/team/480#results'])
-Time = tuple(["Man Utd", "Real Madrid", "Liverpool", "FC Bayern", "PSG"])
+url = tuple(['https://www.365scores.com/pt-br/football/england/manchester-united/team/105#results','https://www.365scores.com/pt-br/football/spain/real-madrid/team/131#results',
+            'https://www.365scores.com/pt-br/football/england/liverpool/team/108#results', 'https://www.365scores.com/pt-br/football/germany/bayern-munich/team/331#results', 
+            'https://www.365scores.com/pt-br/football/france/psg/team/480#results', 'https://www.365scores.com/pt-br/football/italy/juventus/team/226#results',
+            'https://www.365scores.com/pt-br/football/england/manchester-city/team/110#results', 'https://www.365scores.com/pt-br/football/spain/fc-barcelona/team/132#results', 
+            'https://www.365scores.com/pt-br/football/spain/atletico-madrid/team/134#results'])
+Time = tuple(["Man Utd", "Real Madrid", "Liverpool", "FC Bayern", "PSG", "Juventus", "Man City", "FC Barcelona", "Atl. Madrid"])
 
 Atributos = tuple(["Data", "Partida", "Nome", "Nota", "Area", "Posição", "Min", "Gols", "Assist.", "Pênalti recebido", 
                 "Total de chutes", "Chutes no gol", "Chutes para fora", "Trave", "Chutes interceptados", "Chances perdidas", 
