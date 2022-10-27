@@ -17,7 +17,11 @@ def criaDriver():
 def tentaAcessarJogo(driver, action, jogo, lastDate, v=0):
     """Coleta a data do jogo, verifica se o jogo ocorreu após a data desejada e então acessa o jogo"""
     action.send_keys(Keys.ESCAPE).perform()
-    data = driver.find_element(By.XPATH, f"/html/body/div[3]/div/main/div[4]/div/div/div[1]/div/div[2]/div[{jogo}]/a/div[2]").get_attribute('innerHTML')
+    try:
+        data = driver.find_element(By.XPATH, f"/html/body/div[3]/div/main/div[4]/div/div/div[1]/div/div[2]/div[{jogo}]/a/div[2]").get_attribute('innerHTML')
+    except:
+        sleep(1)
+        data = driver.find_element(By.XPATH, f"/html/body/div[3]/div/main/div[4]/div/div/div[1]/div/div[2]/div[{jogo}]/a/div[2]").get_attribute('innerHTML')
     data = datetime.strptime(data, "%d/%m/%Y")
     if(data > lastDate):
         try:
@@ -49,7 +53,7 @@ def tentaAcessaEscalação(driver, Time):
         sleep(0.5)
     return resultado[0] + " " + resultado[2] + "x" + resultado[4] + " " + resultado[6]
 
-def acessaEscalação(driver, action, Time, i=0, f=1):
+def acessaEscalação(driver, action, Time, i=0):
     try:
         sleep(1)
         action.send_keys(Keys.ESCAPE).perform()
@@ -58,15 +62,12 @@ def acessaEscalação(driver, action, Time, i=0, f=1):
         sleep(0.5)
         return tentaAcessaEscalação(driver, Time)
     except:
-        if(i>15):
-            print("DEU ERRADO")
-            exit()
-        if(i>9 and f):
+        if(i>9):
             driver.back()
             driver.forward()
             sleep(1)
-            return acessaEscalação(driver, action, Time, 0, 0)
-        return acessaEscalação(driver, action, Time, i+1, f)
+            return acessaEscalação(driver, action, Time, 0)
+        return acessaEscalação(driver, action, Time, i+1)
 
 def acessaJogadores(driver, action, file, atributos, dadosJogo):
     try:
