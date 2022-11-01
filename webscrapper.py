@@ -27,7 +27,7 @@ for i in range(len(Time)):
     j=1
     while(True):
         # Acessando um jogo específico
-        dataLimite = datetime(2022, 8, 2)
+        dataLimite = datetime(2022, 10, 31)
         jogo, dataJogo = module.acessaJogo(driver, actions, j, dataLimite)
         if(jogo == 1):
             resultado = module.acessaEscalação(driver, actions, Time[i])
