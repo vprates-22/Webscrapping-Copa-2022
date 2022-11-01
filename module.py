@@ -18,20 +18,27 @@ def tentaAcessarJogo(driver, action, jogo, lastDate, v=0):
     """Coleta a data do jogo, verifica se o jogo ocorreu após a data desejada e então acessa o jogo"""
     action.send_keys(Keys.ESCAPE).perform()
     try:
-        data = driver.find_element(By.XPATH, f"/html/body/div[3]/div/main/div[4]/div/div/div[1]/div/div[2]/div[{jogo}]/a/div[2]").get_attribute('innerHTML')
+        data = driver.find_element(By.XPATH, f"/html/body/div[3]/div/main/div[4]/div/div/div[1]/div/div[2]/div[{jogo}]/a/div[2]").text
     except:
         sleep(1)
-        data = driver.find_element(By.XPATH, f"/html/body/div[3]/div/main/div[4]/div/div/div[1]/div/div[2]/div[{jogo}]/a/div[2]").get_attribute('innerHTML')
+        data = driver.find_element(By.XPATH, f"/html/body/div[3]/div/main/div[4]/div/div/div[1]/div/div[2]/div[{jogo}]/a/div[2]").text
     data = datetime.strptime(data, "%d/%m/%Y")
     if(data > lastDate):
         try:
+            status = driver.find_element(By.XPATH, f"/html/body/div[3]/div/main/div[4]/div/div/div[1]/div/div[2]/div[{jogo}]/div/div/div/div/div[2]/a/div[2]").text
+            if(status != "Fim"):
+                status = driver.find_element(By.XPATH, f"/html/body/div[3]/div/main/div[4]/div/div/div[1]/div/div[2]/div[{jogo}]/div/div/div/div/div[2]/a/div[3]").text
+                if(status != "Fim"):
+                    return 2, data
             driver.find_element(By.XPATH, f"/html/body/div[3]/div/main/div[4]/div/div/div[1]/div/div[2]/div[{jogo}]/div/div/div/div/div[2]/a").click()
         except:      
             action.send_keys(Keys.ESCAPE).perform()
             action.send_keys(Keys.HOME).perform()
             action.send_keys(v//3 * Keys.PAGE_DOWN).perform()
             sleep(1)
-            tentaAcessarJogo(driver, action, jogo, lastDate, v+1)
+            if(v < 20):
+                return tentaAcessarJogo(driver, action, jogo, lastDate, v+1)
+            return tentaAcessarJogo(driver, action, jogo, lastDate, 0)
         return 1, data
     return 0, data
 
@@ -64,6 +71,7 @@ def acessaEscalação(driver, action, Time, i=0):
     except:
         if(i>9):
             driver.back()
+            sleep(1)
             driver.forward()
             sleep(1)
             return acessaEscalação(driver, action, Time, 0)

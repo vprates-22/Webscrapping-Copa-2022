@@ -7,7 +7,7 @@ url = tuple(['https://www.365scores.com/pt-br/football/england/manchester-united
             'https://www.365scores.com/pt-br/football/france/psg/team/480#results', 'https://www.365scores.com/pt-br/football/italy/juventus/team/226#results',
             'https://www.365scores.com/pt-br/football/england/manchester-city/team/110#results', 'https://www.365scores.com/pt-br/football/spain/fc-barcelona/team/132#results', 
             'https://www.365scores.com/pt-br/football/spain/atletico-madrid/team/134#results'])
-Time = tuple(["Man Utd", "Real Madrid", "Liverpool", "FC Bayern", "PSG", "Juventus", "Man City", "FC Barcelona", "Atl. Madrid"])
+Time = tuple(["Man Utd", "Real Madrid", "Liverpool", "Bayern de Munique", "PSG", "Juventus", "Man City", "FC Barcelona", "Atl. Madrid"])
 
 Atributos = tuple(["Data", "Partida", "Nome", "Nota", "Area", "Posição", "Min", "Gols", "Assist.", "Pênalti recebido", 
                 "Total de chutes", "Chutes no gol", "Chutes para fora", "Trave", "Chutes interceptados", "Chances perdidas", 
@@ -27,12 +27,14 @@ for i in range(len(Time)):
     j=1
     while(True):
         # Acessando um jogo específico
-        dataLimite = datetime(2022, 10, 26)
+        dataLimite = datetime(2022, 8, 2)
         jogo, dataJogo = module.acessaJogo(driver, actions, j, dataLimite)
-        if(jogo):
+        if(jogo == 1):
             resultado = module.acessaEscalação(driver, actions, Time[i])
             module.acessaJogadores(driver, actions, f_temp, Atributos, [dataJogo, resultado])
             module.entreJogos(driver, actions)
+            j += 1
+        elif(jogo == 2):
             j += 1
         else:
             break
