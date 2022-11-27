@@ -42,9 +42,9 @@ def pesquisaTime(driver:webdriver.Chrome, action:ActionChains, Time:str) -> None
     sleep(1)
     action.send_keys(Keys.ESCAPE).perform()
     driver.find_element(By.XPATH, "/html/body/div[3]/div/main/div[4]/div/div/div[1]/div/div[1]/div/div/div/div/div[3]/a[2]").click()
-    sleep(1)
+    sleep(5)
 
-def tentaAcessarJogo(driver:webdriver.Chrome, action:ActionChains, jogo:int, lastDate:datetime, v=0) -> tuple:
+def tentaAcessarJogo(driver:webdriver.Chrome, action:ActionChains, jogo:int, lastDate:datetime, blacklist:tuple, v=0) -> tuple:
     """Coleta a data do jogo, verifica se o jogo ocorreu após a data desejada e então acessa o jogo
        Entrada: webdriver, ActionChains, inteiro que representa o jogo, data limite
        Saída: uma flag, a data do jogo
@@ -54,11 +54,16 @@ def tentaAcessarJogo(driver:webdriver.Chrome, action:ActionChains, jogo:int, las
        2 -> jogo não ocorreu"""
     action.send_keys(Keys.ESCAPE).perform()
     try:
+        sleep(0.5)
         data = driver.find_element(By.XPATH, f"/html/body/div[3]/div/main/div[4]/div/div/div[1]/div/div[2]/div[{jogo}]/a/div[2]").text
     except:
+        action.send_keys(Keys.END).perform()
         sleep(1)
         data = driver.find_element(By.XPATH, f"/html/body/div[3]/div/main/div[4]/div/div/div[1]/div/div[2]/div[{jogo}]/a/div[2]").text
+    campeonato = driver.find_element(By.XPATH, f"/html/body/div[3]/div/main/div[4]/div/div/div[1]/div/div[2]/div[{jogo}]/a/div[1]/div/div[1]").text
     data = datetime.strptime(data, "%d/%m/%Y")
+    if data > datetime(2022, 11, 18) or campeonato in blacklist or data == datetime(2022, 10, 19)or data == datetime(2022, 8, 31):
+        return 2, data
     if(data > lastDate):
         try:
             status = driver.find_element(By.XPATH, f"/html/body/div[3]/div/main/div[4]/div/div/div[1]/div/div[2]/div[{jogo}]/div/div/div/div/div[2]/a/div[2]").text
@@ -73,12 +78,12 @@ def tentaAcessarJogo(driver:webdriver.Chrome, action:ActionChains, jogo:int, las
             action.send_keys(v//2 * Keys.PAGE_DOWN).perform()
             sleep(1)
             if(v < 27):
-                return tentaAcessarJogo(driver, action, jogo, lastDate, v+1)
-            return tentaAcessarJogo(driver, action, jogo, lastDate, 0)
+                return tentaAcessarJogo(driver, action, jogo, lastDate, blacklist, v+1)
+            return tentaAcessarJogo(driver, action, jogo, lastDate, blacklist, 0)
         return 1, data
     return 0, data
 
-def acessaJogo(driver:webdriver.Chrome, action:ActionChains, jogo:int, lastDate:datetime) -> tuple:
+def acessaJogo(driver:webdriver.Chrome, action:ActionChains, jogo:int, lastDate:datetime, blacklist:tuple) -> tuple:
     """Coleta a data do jogo, verifica se o jogo ocorreu após a data desejada e então acessa o jogo
        Entrada: webdriver, ActionChains, inteiro que representa o jogo, data limite
        Saída: uma flag, a data do jogo
@@ -86,7 +91,10 @@ def acessaJogo(driver:webdriver.Chrome, action:ActionChains, jogo:int, lastDate:
     0 -> jogo antes da data limite
     1 -> jogo ocorreu e dentro da data limite
     2 -> jogo não ocorreu"""
-    return tentaAcessarJogo(driver, action, jogo, lastDate)
+    try:
+        return tentaAcessarJogo(driver, action, jogo, lastDate, blacklist)
+    except:
+        return tentaAcessarJogo(driver, action, jogo, lastDate, blacklist)
 
 def tentaAcessaEscalação(driver:webdriver.Chrome, Time:str) -> str:
     """Acessa a escalação detalhada e adentra o time em questão
@@ -125,7 +133,7 @@ def acessaEscalação(driver:webdriver.Chrome, action:ActionChains, Time:str, i=
             return acessaEscalação(driver, action, Time, 0)
         return acessaEscalação(driver, action, Time, i+1)
 
-def acessaJogadores(driver:webdriver.Chrome, action:ActionChains, file, atributos:tuple, dadosJogo:list)-> None:
+def acessaJogadores(driver:webdriver.Chrome, action:ActionChains, file, atributos:tuple, dadosJogo:list, time:str, convocacao:dict)-> None:
     """Acessa os jogadores, coleta e escreve os dados em um arquivo
        Entrada: webdriver, ActionChains, arquivo, lista de atributos, lista com [data do jogo, resultado do jogo]
        Saida: Nenhuma"""
@@ -140,21 +148,40 @@ def acessaJogadores(driver:webdriver.Chrome, action:ActionChains, file, atributo
     i = 0
     for _ in range(1,18):
         try:
-            driver.find_element(By.XPATH, "/html/body/div[4]/div/div[2]/div/div[1]/div[2]/div[1]/div[2]/div").text
-            coletaDados(driver, file, atributos, dadosJogo)
-            action.send_keys(Keys.RIGHT).perform()
+            driver.find_element(By.XPATH, "/html/body/div[4]/div[1]/div[2]/div/div[2]/div[3]").text
+            nome = driver.find_element(By.XPATH, "/html/body/div[4]/div[1]/div[2]/div/div[1]/div[2]/div[1]/div[1]").text
+            try:
+                convocacao[time][nome]
+                coletaDados(driver, file, atributos, dadosJogo, convocacao[time][nome])
+                action.send_keys(Keys.RIGHT).perform()
+            except KeyError:
+                action.send_keys(Keys.RIGHT).perform()
             i += 1
         except exc.NoSuchElementException:
             try:
-                driver.find_element(By.XPATH, "//html/body/div[4]/div[@class='scores365 modal_show__2QSda modal_modal_root___VpbK direction-ltr']/div/div[2]/div/div[1]/div[2]/div[1]/div[2]/div").text
-                coletaDados(driver, file, atributos, dadosJogo, 1)
-                action.send_keys(Keys.RIGHT).perform()
+                driver.find_element(By.XPATH, "//html/body/div[4]/div[@class='scores365 modal_show__2QSda modal_modal_root___VpbK direction-ltr']/div/div[2]/div/div[2]/div[3]").text
+                nome = driver.find_element(By.XPATH, "//html/body/div[4]/div[@class='scores365 modal_show__2QSda modal_modal_root___VpbK direction-ltr']/div/div[2]/div/div[1]/div[2]/div[1]/div[1]").get_attribute("innerHTML")
+                try:
+                    convocacao[time][nome]
+                    coletaDados(driver, file, atributos, dadosJogo, convocacao[time][nome], 1)
+                    action.send_keys(Keys.RIGHT).perform()
+                except KeyError:
+                    action.send_keys(Keys.RIGHT).perform()
                 i += 1
-            except:
-                if(i<11):
+            except exc.NoSuchElementException:
+                if(i<2):
+                    action.send_keys(Keys.ESCAPE).perform()
                     driver.back()
+                    sleep(1)
                     driver.forward()
-                    acessaJogadores(driver, action, file, atributos, dadosJogo)
+                    sleep(1)
+                    Home = driver.find_element(By.XPATH, "/html/body/div[3]/div/main/div[2]/div/div/div[2]/div/div[1]/div/div[1]")
+                    if(Home.text == time):
+                        Home.click()
+                    else:
+                        driver.find_element(By.XPATH, "/html/body/div[3]/div/main/div[2]/div/div/div[2]/div/div[1]/div/div[2]").click()
+                    sleep(1)
+                    acessaJogadores(driver, action, file, atributos, dadosJogo, time, convocacao)
                 break
     
 def entreJogos(driver:webdriver.Chrome, action:ActionChains)->None:
@@ -198,7 +225,7 @@ def escreveDados(file, dados:dict, atributos:tuple, dadosJogo:list)->None:
             file.write(';')
     file.write("\n") 
 
-def coletaDados(driver:webdriver.Chrome, file, atributos:tuple, dadosJogo:list, alt = 0)->None:
+def coletaDados(driver:webdriver.Chrome, file, atributos:tuple, dadosJogo:list, selecao:str, alt = 0)->None:
     """Coleta as estatisticas de cada jogador
        Entrada: webdriver, arquivo, lista de atributos, lista com [data do jogo, resultado do jogo]
        Saida: Nenhuma"""
@@ -217,6 +244,7 @@ def coletaDados(driver:webdriver.Chrome, file, atributos:tuple, dadosJogo:list, 
     stats[primeiroBloco[4]] = primeiroBloco[3][0]
     stats[primeiroBloco[6]] = primeiroBloco[5]
     stats['Area'] =  segundoBloco[0]
+    stats['Seleção'] = selecao
     for i in range(1, len(segundoBloco), 2):
         stats[segundoBloco[i]] = segundoBloco[i+1]
     for i in range(1, len(terceiroBloco), 2):
