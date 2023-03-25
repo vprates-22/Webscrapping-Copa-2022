@@ -1,16 +1,12 @@
 from selenium.webdriver.common.by import By
 from time import sleep
 import module_conv
+import module
 import json
 
-url = "https://www.365scores.com/pt-br/football/international/fifa-world-cup/league/5930/standings"
-driver, actions = module_conv.abre_pg()
+URL = "https://www.365scores.com/pt-br/football/international/fifa-world-cup/league/5930/standings"
+driver, actions = module.criaDriver(URL)
 
-driver.get(url)
-driver.find_element(By.XPATH, "/html/body/div[1]/div/div/div/div/div/div[2]/button[2]").click()
-
-#while True:
-#    sleep(1000)
 time_jog_sel = {}
 times = set()
 for grupo in range(8):
@@ -20,7 +16,7 @@ for grupo in range(8):
         module_conv.acessa_elenco(driver, actions)
         sleep(1)
         module_conv.coleta_jogadores(driver, sel, time_jog_sel, times)
-        module_conv.retorna(driver, actions)
+        module.entreJogos(driver, actions)
 driver.close()
 
 with open("convocacao.json", "w") as file:
