@@ -15,3 +15,5 @@
 <p>"module.py": principais funções para  o "webscrapper.py", também importante para outros arquivos</p>
 <p>"module_apelidos.py": principais funções para  o "webscrapper.py"</p>
 <p>"module_conv.py": principais funções para  o "convocacao.py"</p>
+
+<h3>main.py ainda incompleto</h3>
