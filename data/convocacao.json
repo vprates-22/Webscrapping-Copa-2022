@@ -1,0 +1,1191 @@
+{
+    "Ajax": {
+        "Remko Pasveer": "Holanda",
+        "Jurriën Timber": "Holanda",
+        "Daley Blind": "Holanda",
+        "Steven Berghuis": "Holanda",
+        "Davy Klaassen": "Holanda",
+        "Kenneth Taylor": "Holanda",
+        "Steven Bergwijn": "Holanda",
+        "Jorge Sánchez": "México",
+        "Edson Alvarez": "México",
+        "Dusan Tadic": "Sérvia",
+        "Mohammed Kudus": "Gana"
+    },
+    "Feyenoord": {
+        "Justin Bijlow": "Holanda",
+        "Alireza Jahanbakhsh": "Irã",
+        "Sebastian Szymanski": "Polônia"
+    },
+    "Heerenveen": {
+        "Andries Noppert": "Holanda"
+    },
+    "Bayern de Munique": {
+        "Matthijs de Ligt": "Holanda",
+        "Benjamin Pavard": "França",
+        "Dayot Upamecano": "França",
+        "Kingsley Coman": "França",
+        "Manuel Neuer": "Alemanha",
+        "Joshua Kimmich": "Alemanha",
+        "Leon Goretzka": "Alemanha",
+        "Jamal Musiala": "Alemanha",
+        "Serge Gnabry": "Alemanha",
+        "Thomas Müller": "Alemanha",
+        "Leroy Sané": "Alemanha",
+        "Josip Stanišić": "Croácia",
+        "Noussair Mazraoui": "Marrocos",
+        "Alphonso Davies": "Canadá",
+        "Eric Choupo-Moting": "Camarões"
+    },
+    "Liverpool": {
+        "Virgil van Dijk": "Holanda",
+        "Trent Alexander-Arnold": "Inglaterra",
+        "Jordan Henderson": "Inglaterra",
+        "Ibrahima Konaté": "França",
+        "Alisson": "Brasil",
+        "Fabinho": "Brasil",
+        "Darwin Núñez": "Uruguai"
+    },
+    "Manchester City": {
+        "Nathan Aké": "Holanda",
+        "Kyle Walker": "Inglaterra",
+        "John Stones": "Inglaterra",
+        "Kalvin Phillips": "Inglaterra",
+        "Phil Foden": "Inglaterra",
+        "Jack Grealish": "Inglaterra",
+        "Julián Álvarez": "Argentina",
+        "Aymeric Laporte": "Espanha",
+        "Rodri Hernández": "Espanha",
+        "Ilkay Gündoğan": "Alemanha",
+        "Kevin De Bruyne": "Bélgica",
+        "Manuel Akanji": "Suíça",
+        "Ederson": "Brasil",
+        "Ruben Dias": "Portugal",
+        "João Cancelo": "Portugal",
+        "Bernardo Silva": "Portugal"
+    },
+    "Inter de Milão": {
+        "Stefan de Vrij": "Holanda",
+        "Denzel Dumfries": "Holanda",
+        "Lautaro Martínez": "Argentina",
+        "Romelu Lukaku": "Bélgica",
+        "Marcelo Brozovic": "Croácia",
+        "André Onana": "Camarões"
+    },
+    "Manchester United": {
+        "Tyrell Malacia": "Holanda",
+        "Luke Shaw": "Inglaterra",
+        "Harry Maguire": "Inglaterra",
+        "Marcus Rashford": "Inglaterra",
+        "Lisandro Martínez": "Argentina",
+        "Raphael Varane": "França",
+        "Christian Eriksen": "Dinamarca",
+        "Casemiro": "Brasil",
+        "Fred": "Brasil",
+        "Antony": "Brasil",
+        "Diogo Dalot": "Portugal",
+        "Bruno Fernandes": "Portugal",
+        "Cristiano Ronaldo": "Portugal",
+        "Facundo Pellistri": "Uruguai"
+    },
+    "Bayer Leverkusen": {
+        "Jeremie Frimpong": "Holanda",
+        "Piero Hincapié": "Equador",
+        "Sardar Azmoun": "Irã",
+        "Exequiel Palacios": "Argentina"
+    },
+    "Atalanta": {
+        "Marten De Roon": "Holanda",
+        "Teun Koopmeiners": "Holanda",
+        "Joakim Maehle": "Dinamarca",
+        "Mario Pasalic": "Croácia"
+    },
+    "FC Barcelona": {
+        "Frenkie de Jong": "Holanda",
+        "Memphis Depay": "Holanda",
+        "Robert Lewandowski": "Polônia",
+        "Jules Kounde": "França",
+        "Ousmane Dembélé": "França",
+        "Andreas Christensen": "Dinamarca",
+        "Alejandro Baldé": "Espanha",
+        "Eric Garcia": "Espanha",
+        "Jordi Alba": "Espanha",
+        "Sergio Busquets": "Espanha",
+        "Gavi": "Espanha",
+        "Pedri": "Espanha",
+        "Ferran Torres": "Espanha",
+        "Ansu Fati": "Espanha",
+        "Ter Stegen": "Alemanha",
+        "Raphinha": "Brasil",
+        "Ronald Araújo": "Uruguai"
+    },
+    "PSV Eindhoven": {
+        "Xavi Simons": "Holanda",
+        "Cody Gakpo": "Holanda",
+        "Luuk de Jong": "Holanda",
+        "Érick Gutiérrez": "México"
+    },
+    "Club Brugge": {
+        "Noa Lang": "Holanda",
+        "Andreas Skov Olsen": "Dinamarca",
+        "Simon Mignolet": "Bélgica",
+        "Hans Vanaken": "Bélgica",
+        "Tajon Buchanan": "Canadá",
+        "Cyle Larin": "Canadá",
+        "Denis Odoi": "Gana",
+        "Kamal Sowah": "Gana"
+    },
+    "Royal Antwerp FC": {
+        "Vincent Janssen": "Holanda",
+        "William Pacho": "Equador",
+        "Toby Alderweireld": "Bélgica"
+    },
+    "Besiktas": {
+        "Wout Weghorst": "Holanda",
+        "Romain Saïss": "Marrocos",
+        "Atiba Hutchinson": "Canadá",
+        "Georges N'Koudou": "Camarões"
+    },
+    "SD Aucas": {
+        "Hernan Galíndez": "Equador"
+    },
+    "Independiente del Valle": {
+        "Moises Ramírez": "Equador"
+    },
+    "LDU Quito": {
+        "Alexander Domínguez": "Equador"
+    },
+    "Santos Laguna": {
+        "Felix Torres": "Equador",
+        "Ayrton Preciado": "Equador"
+    },
+    "São Paulo": {
+        "Arboleda": "Equador"
+    },
+    "Brighton": {
+        "Pervis Estupiñán": "Equador",
+        "Jeremy Sarmiento": "Equador",
+        "Moisés Caicedo": "Equador",
+        "Alexis Mac Allister": "Argentina",
+        "Robert Sanchez": "Espanha",
+        "Kaoru Mitoma": "Japão",
+        "Leandro Trossard": "Bélgica",
+        "Tariq Lamptey": "Gana"
+    },
+    "Seattle Sounders": {
+        "Xavier Arreaga": "Equador",
+        "Nouhou Tolo": "Camarões"
+    },
+    "KRC Genk": {
+        "Angelo Preciado": "Equador",
+        "Gerardo Arteaga": "México",
+        "Bilel El Khanouss": "Marrocos"
+    },
+    "Los Angeles FC": {
+        "Diego Palacios": "Equador",
+        "José Cifuentes": "Equador",
+        "Jhegson Méndez": "Equador",
+        "Gareth Bale": "País de Gales",
+        "Kellyn Acosta": "EUA"
+    },
+    "Troyes": {
+        "Jackson Porozo": "Equador",
+        "Ike Ugbo": "Canadá"
+    },
+    "FC Augsburg": {
+        "Carlos Gruezo": "Equador",
+        "Robert Gumny": "Polônia",
+        "Ruben Vargas": "Suíça"
+    },
+    "Pachuca": {
+        "Romario Ibarra": "Equador",
+        "Kevin Álvarez": "México",
+        "Luis Chávez": "México"
+    },
+    "Leon": {
+        "Ángel Mena": "Equador",
+        "Rodolfo Cota": "México",
+        "Joel Campbell": "Costa Rica"
+    },
+    "Talleres Cordoba": {
+        "Alan Franco": "Equador"
+    },
+    "Cruz Azul": {
+        "Michael Estrada": "Equador",
+        "Carlos Rodríguez": "México",
+        "Uriel Antuna": "México"
+    },
+    "Fenerbahçe SK": {
+        "Enner Valencia": "Equador",
+        "Michy Batshuayi": "Bélgica"
+    },
+    "Real Valladolid": {
+        "Gonzalo Plata": "Equador",
+        "Jawad El Yamiq": "Marrocos"
+    },
+    "Newell's Old Boys": {
+        "Djorkaeff Reasco": "Equador"
+    },
+    "Chelsea": {
+        "Edouard Mendy": "Senegal",
+        "Kalidou Koulibaly": "Senegal",
+        "Mason Mount": "Inglaterra",
+        "Conor Gallagher": "Inglaterra",
+        "Raheem Sterling": "Inglaterra",
+        "Christian Pulisic": "EUA",
+        "Cesar Azpilicueta": "Espanha",
+        "Kai Havertz": "Alemanha",
+        "Mateo Kovacic": "Croácia",
+        "Hakim Ziyech": "Marrocos",
+        "Denis Zakaria": "Suíça",
+        "Thiago Silva": "Brasil"
+    },
+    "QPR": {
+        "Seny Dieng": "Senegal",
+        "Ilias Chair": "Marrocos"
+    },
+    "Rennes": {
+        "Alfred Gomis": "Senegal",
+        "Joe Rodon": "País de Gales",
+        "Steve Mandanda": "França",
+        "Arthur Theate": "Bélgica",
+        "Jeremy Doku": "Bélgica",
+        "Lovro Majer": "Croácia",
+        "Christopher Wooh": "Camarões",
+        "Kamaldeen Sulemana": "Gana"
+    },
+    "Anderlecht": {
+        "Moussa Ndiaye": "Senegal",
+        "Jan Vertonghen": "Bélgica",
+        "Zeno Debast": "Bélgica"
+    },
+    "Monaco": {
+        "Ismail Jakobs": "Senegal",
+        "Krepin Diatta": "Senegal",
+        "Axel Disasi": "França",
+        "Youssouf Fofana": "França",
+        "Takumi Minamino": "Japão",
+        "Breel Embolo": "Suíça"
+    },
+    "RB Leipzig": {
+        "Abdou Diallo": "Senegal",
+        "Yussuf Poulsen": "Dinamarca",
+        "Dani Olmo": "Espanha",
+        "David Raum": "Alemanha",
+        "Lukas Klostermann": "Alemanha",
+        "Josko Gvardiol": "Croácia",
+        "André Silva": "Portugal"
+    },
+    "Real Betis": {
+        "Youssouf Sabaly": "Senegal",
+        "Andres Guardado": "México",
+        "German Pezzella": "Argentina",
+        "Guido Rodriguez": "Argentina",
+        "William Carvalho": "Portugal"
+    },
+    "Amiens": {
+        "Formose Mendy": "Senegal"
+    },
+    "Olympiacos": {
+        "Pape Abou Cisse": "Senegal",
+        "Pierre Kunde": "Camarões",
+        "Hwang In-Beom": "Coreia do Sul",
+        "Hwang Ui Jo": "Coreia do Sul"
+    },
+    "AC Milan": {
+        "Fode Ballo-Toure": "Senegal",
+        "Sergino Dest": "EUA",
+        "Theo Hernández": "França",
+        "Olivier Giroud": "França",
+        "Simon Kjaer": "Dinamarca",
+        "Charles de Ketelaere": "Bélgica",
+        "Rafael Leao": "Portugal"
+    },
+    "Everton": {
+        "Idrissa Gana Gueye": "Senegal",
+        "Jordan Pickford": "Inglaterra",
+        "Conor Coady": "Inglaterra",
+        "Amadou Onana": "Bélgica"
+    },
+    "Leicester": {
+        "Nampalys Mendy": "Senegal",
+        "James Maddison": "Inglaterra",
+        "Danny Ward": "País de Gales",
+        "Wout Faes": "Bélgica",
+        "Timothy Castagne": "Bélgica",
+        "Youri Tielemans": "Bélgica",
+        "Daniel Amartey": "Gana"
+    },
+    "Nottingham Forest": {
+        "Cheikhou Kouyaté": "Senegal",
+        "Wayne Hennessey": "País de Gales",
+        "Neco Williams": "País de Gales",
+        "Brennan Johnson": "País de Gales",
+        "Remo Freuler": "Suíça"
+    },
+    "Sheffield Utd": {
+        "Iliman Ndiaye": "Senegal",
+        "Adam Davies": "País de Gales"
+    },
+    "Marseille": {
+        "Pape Gueye": "Senegal",
+        "Ahmadou Dieng": "Senegal",
+        "Matteo Guendouzi": "França",
+        "Jordan Veretout": "França",
+        "Simon Ngapandouetnbu": "Camarões"
+    },
+    "Rayo Vallecano": {
+        "Pathé Ciss": "Senegal"
+    },
+    "Tottenham": {
+        "Pape Sarr": "Senegal",
+        "Eric Dier": "Inglaterra",
+        "Harry Kane": "Inglaterra",
+        "Ben Davies": "País de Gales",
+        "Cristian Romero": "Argentina",
+        "Hugo Lloris": "França",
+        "Pierre-Emil Højbjerg": "Dinamarca",
+        "Ivan Perisic": "Croácia",
+        "Richarlison": "Brasil",
+        "Rodrigo Bentancur": "Uruguai",
+        "Heung-Min Son": "Coreia do Sul"
+    },
+    "Reading": {
+        "Mamadou Loum Ndiaye": "Senegal",
+        "Junior Hoilett": "Canadá",
+        "Abdul Rahman Baba": "Gana"
+    },
+    "Watford FC": {
+        "Ismaila Sarr": "Senegal"
+    },
+    "Alanyaspor": {
+        "Famara Diedhiou": "Senegal"
+    },
+    "Salernitana": {
+        "Boulaye Dia": "Senegal",
+        "Krzysztof Piątek": "Polônia",
+        "Dylan Bronn": "Tunísia"
+    },
+    "Villarreal": {
+        "Nicolas Jackson": "Senegal",
+        "Geronimo Rulli": "Argentina",
+        "Juan Foyth": "Argentina",
+        "Pau Torres": "Espanha",
+        "Yeremy Pino": "Espanha"
+    },
+    "Newcastle": {
+        "Nick Pope": "Inglaterra",
+        "Kieran Trippier": "Inglaterra",
+        "Callum Wilson": "Inglaterra",
+        "Fabian Schär": "Suíça",
+        "Bruno Guimarães": "Brasil"
+    },
+    "Arsenal": {
+        "Aaron Ramsdale": "Inglaterra",
+        "Ben White": "Inglaterra",
+        "Bukayo Saka": "Inglaterra",
+        "Matt Turner": "EUA",
+        "William Saliba": "França",
+        "Takehiro Tomiyasu": "Japão",
+        "Granit Xhaka": "Suíça",
+        "Gabriel Jesus": "Brasil",
+        "Gabriel Martinelli": "Brasil",
+        "Thomas Partey": "Gana"
+    },
+    "West Ham": {
+        "Declan Rice": "Inglaterra",
+        "Alphonse Areola": "França",
+        "Thilo Kehrer": "Alemanha",
+        "Nayef Aguerd": "Marrocos",
+        "Lucas Paquetá": "Brasil"
+    },
+    "Dortmund": {
+        "Jude Bellingham": "Inglaterra",
+        "Giovanni Reyna": "EUA",
+        "Niklas Süle": "Alemanha",
+        "Nico Schlotterbeck": "Alemanha",
+        "Julian Brandt": "Alemanha",
+        "Karim Adeyemi": "Alemanha",
+        "Youssoufa Moukoko": "Alemanha",
+        "Thomas Meunier": "Bélgica",
+        "Thorgan Hazard": "Bélgica",
+        "Gregor Kobel": "Suíça",
+        "Raphael Guerreiro": "Portugal"
+    },
+    "Bournemouth": {
+        "Chris Mepham": "País de Gales",
+        "Kieffer Moore": "País de Gales"
+    },
+    "Burnley": {
+        "Connor Roberts": "País de Gales",
+        "Anass Zaroury": "Marrocos"
+    },
+    "Spezia": {
+        "Ethan Ampadu": "País de Gales",
+        "Jakub Kiwior": "Polônia"
+    },
+    "Luton": {
+        "Tom Lockyer": "País de Gales",
+        "Ethan Horvath": "EUA"
+    },
+    "Swansea": {
+        "Benjamin Cabango": "País de Gales",
+        "Joe Allen": "País de Gales",
+        "Olivier Ntcham": "Camarões"
+    },
+    "OGC Nice": {
+        "Aaron Ramsey": "País de Gales",
+        "Kasper Schmeichel": "Dinamarca"
+    },
+    "Dundee United": {
+        "Dylan Levitt": "País de Gales",
+        "Aziz Behich": "Austrália"
+    },
+    "Cardiff": {
+        "Rubin Colwill": "País de Gales",
+        "Mark Harris": "País de Gales"
+    },
+    "Fulham": {
+        "Harry Wilson": "País de Gales",
+        "Daniel James": "País de Gales",
+        "Antonee Robinson": "EUA",
+        "Tim Ream": "EUA",
+        "Aleksandar Mitrović": "Sérvia",
+        "João Palhinha": "Portugal"
+    },
+    "Huddersfield": {
+        "Sorba Thomas": "País de Gales"
+    },
+    "New York City FC": {
+        "Sean Johnson": "EUA"
+    },
+    "Nashville SC": {
+        "Walker Zimmerman": "EUA",
+        "Shaquell Moore": "EUA"
+    },
+    "New York Red Bulls": {
+        "Aaron Long": "EUA"
+    },
+    "Celtic": {
+        "Cameron Carter-Vickers": "EUA",
+        "Aaron Mooy": "Austrália",
+        "Daizen Maeda": "Japão",
+        "Josip Juranovic": "Croácia"
+    },
+    "Inter Miami": {
+        "DeAndre Yedlin": "EUA"
+    },
+    "Borussia Mönchengladbach": {
+        "Joseph Scally": "EUA",
+        "Marcus Thuram": "França",
+        "Ko Itakura": "Japão",
+        "Jonas Hofmann": "Alemanha",
+        "Yann Sommer": "Suíça",
+        "Nico Elvedi": "Suíça"
+    },
+    "Leeds United": {
+        "Tyler Adams": "EUA",
+        "Brenden Aaronson": "EUA",
+        "Rasmus Kristensen": "Dinamarca"
+    },
+    "Valencia": {
+        "Yunus Musah": "EUA",
+        "Hugo Guillamon": "Espanha",
+        "Carlos Soler": "Espanha",
+        "Eray Cümart": "Suíça",
+        "Edinson Cavani": "Uruguai"
+    },
+    "Celta Vigo": {
+        "Luca De La Torre": "EUA",
+        "Joseph Aidoo": "Gana"
+    },
+    "FC Dallas": {
+        "Jesus Ferreira": "EUA"
+    },
+    "Antalyaspor": {
+        "Haji Wright": "EUA"
+    },
+    "Lille": {
+        "Timothy Weah": "EUA",
+        "Jonathan David": "Canadá"
+    },
+    "Portimonense": {
+        "Payam Niazmand": "Irã"
+    },
+    "Ponferradina": {
+        "Amir Abedzadeh": "Irã"
+    },
+    "Dinamo Zagreb": {
+        "Sadegh Moharrami": "Irã",
+        "Dominik Livakovic": "Croácia",
+        "Josip Šutalo": "Croácia",
+        "Bruno Petković": "Croácia",
+        "Mislav Oršić": "Croácia"
+    },
+    "AEK Athens": {
+        "Ehsan HajSafi": "Irã",
+        "Milad Mohammadi": "Irã",
+        "Damian Szymanski": "Polônia",
+        "Orbelín Pineda": "México",
+        "Domagoj Vida": "Croácia"
+    },
+    "Kayserispor": {
+        "Majid Hosseini": "Irã",
+        "Ali Karimi": "Irã"
+    },
+    "Brentford": {
+        "Saman Ghoddos": "Irã",
+        "Christian Norgaard": "Dinamarca",
+        "Mathias Jensen": "Dinamarca",
+        "Mikkel Damsgaard": "Dinamarca",
+        "David Raya": "Espanha",
+        "Bryan Mbeumo": "Camarões"
+    },
+    "Charleroi": {
+        "Ali Gholizadeh": "Irã"
+    },
+    "Shabab Al Ahly": {
+        "Ahmad Nourollahi": "Irã"
+    },
+    "FC Porto": {
+        "Mehdi Taremi": "Irã",
+        "Stephen Eustáquio": "Canadá",
+        "Marko Grujić": "Sérvia",
+        "Diogo Costa": "Portugal",
+        "Pepe": "Portugal",
+        "Otavio": "Portugal"
+    },
+    "Al Hilal Riyadh": {
+        "Mohammed Al Owais": "Arábia Saudita",
+        "Ali Al-Bulaihi": "Arábia Saudita",
+        "Mohammed Al-Burayk": "Arábia Saudita",
+        "Saud Abdulhamid": "Arábia Saudita",
+        "Yasir Al Shahrani": "Arábia Saudita",
+        "Salman Al Faraj": "Arábia Saudita",
+        "Abdulelah Al Malki": "Arábia Saudita",
+        "Salem Al Dawsari": "Arábia Saudita",
+        "Abdullah Otayf": "Arábia Saudita",
+        "Mohamed Kanno": "Arábia Saudita",
+        "Nasser Aldawsari": "Arábia Saudita",
+        "Saleh Al-Shehri": "Arábia Saudita"
+    },
+    "Al Nassr FC Riyadh": {
+        "Nawaf Al-Aqeedi": "Arábia Saudita",
+        "Sultan Al Ghanam": "Arábia Saudita",
+        "Abdullah Madu": "Arábia Saudita",
+        "Abdulelah Al-Amri": "Arábia Saudita",
+        "Ali Al Hassan": "Arábia Saudita",
+        "Sami Al-Najei": "Arábia Saudita",
+        "Vincent Aboubakar": "Camarões"
+    },
+    "Al Shabab Riyadh": {
+        "Hassan Al Tambakti": "Arábia Saudita",
+        "Hattan Bahebri": "Arábia Saudita",
+        "Nawaf Al-Abed": "Arábia Saudita",
+        "Grzegorz Krychowiak": "Polônia",
+        "Seung-Gyu Kim": "Coreia do Sul"
+    },
+    "Ittihad Jeddah": {
+        "Abdulrahman Al Aboud": "Arábia Saudita",
+        "Abderrazak Hamdallah": "Marrocos"
+    },
+    "Abha Club": {
+        "Riyadh Sharahili": "Arábia Saudita",
+        "Devis Epassy Mboka": "Camarões"
+    },
+    "Al Fateh": {
+        "Firas Al-Braikan": "Arábia Saudita"
+    },
+    "Juventus": {
+        "Wojciech Szczesny": "Polônia",
+        "Arkadiusz Milik": "Polônia",
+        "Leandro Paredes": "Argentina",
+        "Angel Di Maria": "Argentina",
+        "Adrien Rabiot": "França",
+        "Danilo": "Brasil",
+        "Alex Sandro": "Brasil",
+        "Bremer": "Brasil",
+        "Filip Kostic": "Sérvia",
+        "Dusan Vlahović": "Sérvia"
+    },
+    "Bologna": {
+        "Lukasz Skorupski": "Polônia",
+        "Michel Aebischer": "Suíça"
+    },
+    "FC Copenhagen": {
+        "Kamil Grabara": "Polônia",
+        "Andreas Cornelius": "Dinamarca",
+        "Mathew Ryan": "Austrália"
+    },
+    "Aston Villa": {
+        "Matty Cash": "Polônia",
+        "Jan Bednarek": "Polônia",
+        "Emiliano Martinez": "Argentina",
+        "Leander Dendoncker": "Bélgica"
+    },
+    "Legia Warszawa": {
+        "Artur Jedrzejczyk": "Polônia",
+        "Filip Mladenovic": "Sérvia"
+    },
+    "Clermont Foot": {
+        "Mateusz Wieteska": "Polônia",
+        "Alidu Seidu": "Gana"
+    },
+    "Benevento": {
+        "Kamil Glik": "Polônia"
+    },
+    "Sampdoria": {
+        "Bartosz Bereszynski": "Polônia",
+        "Abdelhamid Sabiri": "Marrocos",
+        "Filip Djuricic": "Sérvia"
+    },
+    "AS Roma": {
+        "Nicola Zalewski": "Polônia",
+        "Paulo Dybala": "Argentina",
+        "Rui Patricio": "Portugal",
+        "Matías Vina": "Uruguai"
+    },
+    "Birmingham": {
+        "Krystian Bielik": "Polônia",
+        "Hannibal Mejbri": "Tunísia"
+    },
+    "Fiorentina": {
+        "Szymon Zurkowski": "Polônia",
+        "Sofyan Amrabat": "Marrocos",
+        "Nikola Milenkovic": "Sérvia",
+        "Luka Jović": "Sérvia"
+    },
+    "Napoli": {
+        "Piotr Zielinski": "Polônia",
+        "Hirving Lozano": "México",
+        "Andre Anguissa": "Camarões",
+        "Mathías Olivera": "Uruguai",
+        "Kim Min-Jae": "Coreia do Sul"
+    },
+    "Lens": {
+        "Przemysław Frankowski": "Polônia",
+        "Lois Openda": "Bélgica",
+        "Abdul Samed": "Gana"
+    },
+    "Lech Poznan": {
+        "Michal Skóraś": "Polônia"
+    },
+    "Pogon": {
+        "Kamil Grosicki": "Polônia"
+    },
+    "Wolfsburg": {
+        "Jakub Kamiński": "Polônia",
+        "Jonas Wind": "Dinamarca",
+        "Koen Casteels": "Bélgica"
+    },
+    "Charlotte FC": {
+        "Karol Swiderski": "Polônia"
+    },
+    "FC Juárez": {
+        "Alfredo Talavera": "México"
+    },
+    "Club América": {
+        "Guillermo Ochoa": "México",
+        "Néstor Araujo": "México",
+        "Henry Martin": "México"
+    },
+    "Monterrey": {
+        "César Montes": "México",
+        "Héctor Moreno": "México",
+        "Jesús Gallardo": "México",
+        "Luis Romo": "México",
+        "Rogelio Funes Mori": "México"
+    },
+    "Cremonese": {
+        "Johan Vásquez": "México"
+    },
+    "Houston Dynamo": {
+        "Hector Herrera": "México"
+    },
+    "Wolves": {
+        "Raúl Jiménez": "México",
+        "José Sá": "Portugal",
+        "Ruben Neves": "Portugal",
+        "Matheus Nunes": "Portugal",
+        "Hwang Hee-Chan": "Coreia do Sul"
+    },
+    "Chivas": {
+        "Alexis Vega": "México",
+        "Roberto Alvarado": "México"
+    },
+    "River Plate": {
+        "Franco Armani": "Argentina",
+        "Nicolas De La Cruz": "Uruguai"
+    },
+    "Lyon": {
+        "Nicolas Tagliafico": "Argentina",
+        "Karl Toko Ekambi": "Camarões"
+    },
+    "Sevilla": {
+        "Gonzalo Montiel": "Argentina",
+        "Marcos Acuña": "Argentina",
+        "Alejandro Gómez": "Argentina",
+        "Kasper Dolberg": "Dinamarca",
+        "Yassine Bounou": "Marrocos",
+        "Youssef En-Nesyri": "Marrocos",
+        "Alex Telles": "Brasil",
+        "Marko Dmitrović": "Sérvia",
+        "Nemanja Gudelj": "Sérvia"
+    },
+    "SL Benfica": {
+        "Nicolas Otamendi": "Argentina",
+        "Enzo Fernández": "Argentina",
+        "Alexander Bah": "Dinamarca",
+        "António Silva": "Portugal",
+        "João Mário": "Portugal",
+        "Gonçalo Ramos": "Portugal"
+    },
+    "Atletico Madrid": {
+        "Nahuel Molina": "Argentina",
+        "Rodrigo De Paul": "Argentina",
+        "Angel Correa": "Argentina",
+        "Antoine Griezmann": "França",
+        "Marcos Llorente": "Espanha",
+        "Koke": "Espanha",
+        "Alvaro Morata": "Espanha",
+        "Axel Witsel": "Bélgica",
+        "Yannick Carrasco": "Bélgica",
+        "Ivo Grbić": "Croácia",
+        "João Félix": "Portugal",
+        "José Giménez": "Uruguai"
+    },
+    "Atlanta United": {
+        "Thiago Almada": "Argentina"
+    },
+    "PSG": {
+        "Lionel Messi": "Argentina",
+        "Kylian Mbappé": "França",
+        "Carlos Soler": "Espanha",
+        "Pablo Sarabia": "Espanha",
+        "Keylor Navas": "Costa Rica",
+        "Achraf Hakimi": "Marrocos",
+        "Marquinhos": "Brasil",
+        "Neymar": "Brasil",
+        "Nuno Mendes": "Portugal",
+        "Danilo Pereira": "Portugal",
+        "Vitinha": "Portugal"
+    },
+    "Real Madrid": {
+        "Aurélien Tchouaméni": "França",
+        "Eduardo Camavinga": "França",
+        "Daniel Carvajal": "Espanha",
+        "Marco Asensio": "Espanha",
+        "Antonio Rüdiger": "Alemanha",
+        "Thibaut Courtois": "Bélgica",
+        "Eden Hazard": "Bélgica",
+        "Luka Modric": "Croácia",
+        "Éder Militão": "Brasil",
+        "Vinicius Júnior": "Brasil",
+        "Rodrygo": "Brasil",
+        "Federico Valverde": "Uruguai"
+    },
+    "Eintracht Frankfurt": {
+        "Randal Kolo Muani": "França",
+        "Jesper Lindstrom": "Dinamarca",
+        "Daichi Kamada": "Japão",
+        "Kevin Trapp": "Alemanha",
+        "Mario Götze": "Alemanha",
+        "Kristijan Jakic": "Croácia",
+        "Djibril Sow": "Suíça"
+    },
+    "Lorient": {
+        "Montassar Talbi": "Tunísia"
+    },
+    "Al Ahly SC": {
+        "Ali Maâloul": "Tunísia"
+    },
+    "Luzern": {
+        "Mohamed Dräger": "Tunísia",
+        "Ardon Jashari": "Suíça"
+    },
+    "Atromitos Athinon": {
+        "Wajdi Kechrida": "Tunísia"
+    },
+    "Caen": {
+        "Ali Abdi": "Tunísia"
+    },
+    "FC Koln": {
+        "Ellyes Skhiri": "Tunísia"
+    },
+    "Brøndby IF": {
+        "Anis Slimane": "Tunísia",
+        "Daniel Wass": "Dinamarca"
+    },
+    "Odense": {
+        "Issam Jebali": "Tunísia",
+        "Joel King": "Austrália"
+    },
+    "Montpellier": {
+        "Wahbi Khazri": "Tunísia",
+        "Jonas Omlin": "Suíça"
+    },
+    "Zamalek SC": {
+        "Seifeddine Jaziri": "Tunísia"
+    },
+    "Al Ettifaq": {
+        "Naim Sliti": "Tunísia"
+    },
+    "Hertha Berlin": {
+        "Oliver Christensen": "Dinamarca"
+    },
+    "Union Berlin": {
+        "Frederik Ronnow": "Dinamarca"
+    },
+    "Crystal Palace": {
+        "Joachim Andersen": "Dinamarca",
+        "Jordan Ayew": "Gana"
+    },
+    "Galatasaray": {
+        "Victor Nelsson": "Dinamarca",
+        "Dries Mertens": "Bélgica",
+        "Haris Seferovic": "Suíça",
+        "Fernando Muslera": "Uruguai",
+        "Lucas Torreira": "Uruguai"
+    },
+    "Trabzonspor": {
+        "Jens Larsen": "Dinamarca",
+        "Maximiliano Gomez": "Uruguai"
+    },
+    "Espanyol": {
+        "Martin Braithwaite": "Dinamarca"
+    },
+    "Hoffenheim": {
+        "Robert Skov": "Dinamarca",
+        "Andrej Kramaric": "Croácia"
+    },
+    "Sydney FC": {
+        "Andrew Redmayne": "Austrália"
+    },
+    "C. Coast Mariners FC": {
+        "Danny Vuković": "Austrália",
+        "Garang Kuol": "Austrália",
+        "Jason Cummings": "Austrália"
+    },
+    "Columbus Crew": {
+        "Milos Degenek": "Austrália"
+    },
+    "Hearts": {
+        "Nathaniel Atkinson": "Austrália",
+        "Kye Rowles": "Austrália",
+        "Cameron Devlin": "Austrália"
+    },
+    "Brescia": {
+        "Fran Karačić": "Austrália"
+    },
+    "Sunderland": {
+        "Bailey Wright": "Austrália",
+        "Jewison Bennette": "Costa Rica"
+    },
+    "Stoke": {
+        "Harry Souttar": "Austrália"
+    },
+    "Hellas Verona": {
+        "Ajdin Hrustic": "Austrália",
+        "Darko Lazovic": "Sérvia",
+        "Martin Hongla": "Camarões"
+    },
+    "Middlesbrough": {
+        "Riley McGree": "Austrália"
+    },
+    "St. Pauli": {
+        "Jackson Irvine": "Austrália"
+    },
+    "St. Mirren": {
+        "Keanu Baccus": "Austrália"
+    },
+    "Melbourne City": {
+        "Mathew Leckie": "Austrália",
+        "Jamie Maclaren": "Austrália"
+    },
+    "Cadiz CF": {
+        "Awer Mabil": "Austrália"
+    },
+    "Adelaide United FC": {
+        "Craig Goodwin": "Austrália"
+    },
+    "Athletic Bilbao": {
+        "Unai Simón": "Espanha",
+        "Nico Williams": "Espanha",
+        "Iñaki Williams": "Gana"
+    },
+    "Strasbourg": {
+        "Eiji Kawashima": "Japão",
+        "Alexander Djiku": "Gana"
+    },
+    "Shimizu S-Pulse": {
+        "Shuichi Gonda": "Japão"
+    },
+    "STVV": {
+        "Daniel Schmidt": "Japão"
+    },
+    "Kawasaki Frontale": {
+        "Miki Yamane": "Japão",
+        "Shogo Taniguchi": "Japão"
+    },
+    "FC Tokyo": {
+        "Yuto Nagatomo": "Japão"
+    },
+    "Urawa Red Diamonds": {
+        "Hiroki Sakai": "Japão"
+    },
+    "Schalke 04": {
+        "Maya Yoshida": "Japão"
+    },
+    "Stuttgart": {
+        "Hiroki Ito": "Japão",
+        "Wataru Endo": "Japão",
+        "Borna Sosa": "Croácia"
+    },
+    "CD Leganés": {
+        "Gaku Shibasaki": "Japão"
+    },
+    "Real Sociedad": {
+        "Takefusa Kubo": "Japão"
+    },
+    "Sporting CP": {
+        "Hidemasa Morita": "Japão",
+        "Sebastian Coates": "Uruguai",
+        "Manuel Ugarte": "Uruguai",
+        "Issahaku Fatawu": "Gana"
+    },
+    "Reims": {
+        "Junya Ito": "Japão"
+    },
+    "Fortuna Düsseldorf": {
+        "Ao Tanaka": "Japão"
+    },
+    "Freiburg": {
+        "Ritsu Doan": "Japão",
+        "Matthias Ginter": "Alemanha",
+        "Christian Günter": "Alemanha",
+        "Woo-Yeong Jeong": "Coreia do Sul",
+        "Daniel Kyereh": "Gana"
+    },
+    "VfL Bochum": {
+        "Takuma Asano": "Japão"
+    },
+    "Shonan Bellmare": {
+        "Shuto Machino": "Japão"
+    },
+    "Cercle Brugge": {
+        "Ayase Ueda": "Japão"
+    },
+    "Southampton": {
+        "Armel Bella Kotchap": "Alemanha",
+        "Mohamed Salisu": "Gana"
+    },
+    "Werder Bremen": {
+        "Niclas Füllkrug": "Alemanha",
+        "Milos Veljkovic": "Sérvia"
+    },
+    "CD Lugo": {
+        "Patrick Sequeira": "Costa Rica"
+    },
+    "Colorado Rapids": {
+        "Daniel Chacón": "Costa Rica"
+    },
+    "Millonarios": {
+        "Juan Pablo Vargas": "Costa Rica"
+    },
+    "Al Wahda Mecca": {
+        "Oscar Duarte": "Costa Rica",
+        "Munir Mohamedi": "Marrocos"
+    },
+    "Real Salt Lake": {
+        "Bryan Oviedo": "Costa Rica"
+    },
+    "Konyaspor": {
+        "Francisco Calvo": "Costa Rica"
+    },
+    "FC Cincinnati": {
+        "Ronald Matarrita": "Costa Rica"
+    },
+    "NK Osijek": {
+        "Ivica Ivušić": "Croácia"
+    },
+    "Zenit St. Petersburg": {
+        "Dejan Lovren": "Croácia"
+    },
+    "Rangers": {
+        "Borna Barišić": "Croácia"
+    },
+    "Sassuolo": {
+        "Martin Erlić": "Croácia"
+    },
+    "Torino": {
+        "Nikola Vlašić": "Croácia",
+        "Ricardo Rodriguez": "Suíça",
+        "Vanja Milinkovic-Savic": "Sérvia",
+        "Sasa Lukic": "Sérvia",
+        "Nemanja Radonjic": "Sérvia"
+    },
+    "Red Bull Salzburg": {
+        "Luka Sučić": "Croácia",
+        "Philipp Kohn": "Suíça",
+        "Noah Okafor": "Suíça",
+        "Strahinja Pavlovic": "Sérvia"
+    },
+    "HNK Hajduk Split": {
+        "Marko Livaja": "Croácia"
+    },
+    "Osasuna": {
+        "Ante Budimir": "Croácia",
+        "Ez Abdé": "Marrocos"
+    },
+    "Brest": {
+        "Achraf Dari": "Marrocos"
+    },
+    "Angers": {
+        "Azzedine Ounahi": "Marrocos",
+        "Sofiane Boufal": "Marrocos"
+    },
+    "Standard de Liège": {
+        "Selim Amallah": "Marrocos"
+    },
+    "Toulouse": {
+        "Zakaria Aboukhlal": "Marrocos"
+    },
+    "Bari": {
+        "Walid Cheddira": "Marrocos"
+    },
+    "Minnesota United": {
+        "Dayne St Clair": "Canadá"
+    },
+    "CF Montréal": {
+        "James Pantemis": "Canadá",
+        "Alistair Johnston": "Canadá",
+        "Kamal Miller": "Canadá",
+        "Joel Waterman": "Canadá",
+        "Samuel Piette": "Canadá",
+        "Ismaël Koné": "Canadá"
+    },
+    "Hatayspor": {
+        "Sam Adekugbe": "Canadá"
+    },
+    "Chaves": {
+        "Steven Vitoria": "Canadá"
+    },
+    "Toronto FC": {
+        "Richie Laryea": "Canadá",
+        "Mark Kaye": "Canadá",
+        "Jonathan Osorio": "Canadá"
+    },
+    "Panaitolikos": {
+        "Derek Cornelius": "Canadá"
+    },
+    "St. Johnstone": {
+        "David Wotherspoon": "Canadá"
+    },
+    "Vancouver Whitecaps": {
+        "Lucas Cavallini": "Canadá"
+    },
+    "FC Basel 1893": {
+        "Liam Millar": "Canadá",
+        "Fabian Frei": "Suíça"
+    },
+    "Mainz 05": {
+        "Silvan Widmer": "Suíça",
+        "Lee Jae-Sung": "Coreia do Sul"
+    },
+    "Young Boys": {
+        "Christian Fassnacht": "Suíça",
+        "Fabian Rieder": "Suíça",
+        "J. Nsame": "Camarões"
+    },
+    "FC Lugano": {
+        "Renato Steffen": "Suíça"
+    },
+    "Chicago Fire": {
+        "Xherdan Shaqiri": "Suíça"
+    },
+    "Palmeiras": {
+        "Weverton": "Brasil"
+    },
+    "Pumas UNAM": {
+        "Daniel Alves": "Brasil"
+    },
+    "Flamengo": {
+        "Everton Ribeiro": "Brasil",
+        "Pedro": "Brasil",
+        "Guillermo Varela": "Uruguai",
+        "Arrascaeta": "Uruguai"
+    },
+    "Mallorca": {
+        "Predrag Rajković": "Sérvia",
+        "Lee Kang-in": "Coreia do Sul"
+    },
+    "Getafe": {
+        "Stefan Mitrovic": "Sérvia",
+        "Nemanja Maksimovic": "Sérvia"
+    },
+    "Almeria": {
+        "Srdan Babic": "Sérvia"
+    },
+    "SC Braga": {
+        "Uros Racic": "Sérvia",
+        "Ricardo Horta": "Portugal"
+    },
+    "Lazio": {
+        "Sergej Milinković-Savić": "Sérvia",
+        "Matías Vecino": "Uruguai"
+    },
+    "PAOK": {
+        "Andrija Zivković": "Sérvia"
+    },
+    "Aris Salonica": {
+        "Nicolas N'Koulou": "Camarões"
+    },
+    "Philadelphia Union": {
+        "Oliver Mbaizo": "Camarões"
+    },
+    "Al Ta'i": {
+        "Collins Fai": "Camarões"
+    },
+    "Nantes": {
+        "Jean Charles Castelletto": "Camarões"
+    },
+    "Udinese": {
+        "Enzo Ebosse": "Camarões"
+    },
+    "Hannover": {
+        "Gaël Ondoua": "Camarões"
+    },
+    "KV Mechelen": {
+        "Samuel Yves Oum Gouet": "Camarões"
+    },
+    "Dinamo Moscow": {
+        "Moumi Ngamaleu": "Camarões"
+    },
+    "Velez Sarsfield": {
+        "Diego Godin": "Uruguai"
+    },
+    "Los Angeles Galaxy": {
+        "Martin Caceres": "Uruguai"
+    },
+    "Orlando City SC": {
+        "Facundo Torres": "Uruguai"
+    },
+    "Athletico-PR": {
+        "Agustin Canobbio": "Uruguai"
+    },
+    "Gamba Osaka": {
+        "Kyung-Won Kwon": "Coreia do Sul"
+    },
+    "KAS Eupen": {
+        "Abdul Manaf Nurudeen": "Gana"
+    },
+    "Auxerre": {
+        "Gideon Mensah": "Gana"
+    },
+    "KAA Gent": {
+        "Elisha Owusu": "Gana"
+    },
+    "Bristol City": {
+        "Antoine Semenyo": "Gana"
+    }
+}

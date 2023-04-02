@@ -8,5 +8,5 @@ Atributos = tuple(["Data", "Partida", "Nome", "Nota", "Area", "Posição", "Min"
                 "Vitória em duelos por baixo", "Vitória em duelos por cima", "Defesas", "Gols sofridos", "Pênalti defendido",
                 "Reposição de soco", "Erros que terminaram em chute adversário", "Defesa pelo alto", "Seleção"])
 
-a = pd.read_table("def.txt", sep = ';', decimal=".",header=None, names=Atributos)
+a = pd.read_table("./data/def.txt", sep = ';', decimal=".",header=None, names=Atributos)
 print(a.info())
