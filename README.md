@@ -1,19 +1,23 @@
 # Webscrapping-Copa-2022
-<h3>Webscarpping das Estatísticas</h3>
-<p>arquivo "webscrapper.py"</p>
-<p>resultados salvos em "def.txt"</p>
+## Webscarpping das Estatísticas
+### Diretório scrapping
+arquivo "apelidos.py" - coleta os apelidos de cada time - resultados salvo em "data/nome_apelidos.json"
+arquivo "convocação.py" - coleta os jogadores convocados de cada seleção e seus respectivos times- resultados salvo em "data/convocacao.json" e "data/times.json"
+arquivo "webscrapper.py" - coleta de dados dos jogadores convocados - resultados salvos em "data/def.txt"
 
-<h3>Webscrapping dos apelidos de cada time</h3>
-<p>arquivo "apelidos.py"</p>
-<p>resultados salvos em "nome_apelido.json"</p>
+## Modularização do código
+### Diretório modules
+arquivo "module_apelidos.py" - modulo das principais funções de "scrapping/apelidos.py"
+arquivo "module_conv.py" - modulo das principais funções de "scrapping/convocacao.py"
+arquivo "module.py" - modulo das principais funções de "scrapping/webscrapper.py"
 
-<h3>Webscrapping dos jogadores convocados</h3>
-<p>arquivo "convocacao.py"</p>
-<p>resultados salvos em "convocacao.json"</p>
+## Armazem de dados
+### Diretório data
+arquivo "convocacao.json" - contem uma estrutura de dicionário {time: {jogador : seleção}}
+arquivo "nome_apelidos.json" - contem uma estrutura de dicionário {nome completo time : apelido time} 
+arquivo "time.json" - contem uma estrutura de lista com o nome completo de cada time que contem um jogador convocado
+arquivo "def.txt" - contem o dado de quase todos os jogadores convocados entre 05/08/2022 até o início da Copa do Mundo de 2022
+arquivo "leituras" - contem 
 
-<h3>Modulos</h3>
-<p>"module.py": principais funções para  o "webscrapper.py", também importante para outros arquivos</p>
-<p>"module_apelidos.py": principais funções para  o "webscrapper.py"</p>
-<p>"module_conv.py": principais funções para  o "convocacao.py"</p>
-
-<h3>main.py ainda incompleto</h3>
+## Análise dos dados
+### main.ipynb (Incompleto)
