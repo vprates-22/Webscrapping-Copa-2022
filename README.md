@@ -28,4 +28,4 @@ arquivo "def.txt" - contem o dado de quase todos os jogadores convocados entre 0
 arquivo "leituras" - contem 
 
 ## Análise dos dados
-### main.ipynb (Incompleto)
+https://github.com/vprates-22/Analise_de_Dados_Copa_2022-
